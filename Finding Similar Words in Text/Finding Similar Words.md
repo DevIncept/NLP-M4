@@ -26,14 +26,14 @@ starting in 1985 and has been directed in recent years by **Christiane Fellbaum.
 ## The Project Flow
 - The previous given inputs or the new inputs are stored and passed on in the project flow.
 - The text may contains many unwanted data with respective to English Vocabulary - Synonyms like numbers, punctuations marks and even uppercases.
-- To remove them Regex or Regular Expressions are used 
+- To remove them Regex or Regular Expressions are used.
 ```py
 text = re.sub(r'[^a-zA-Z\s]+', '', text)
 text = text.lower()
 ```
 - Next is to remove the Stopwords(is, I, are, am, and, the) and tokenize to segregate the words.
-- Next part is to **Lemmatization**.
-- Lemmatization is the process of removing infectional endings and convert to base form or dictionary form of the word which is known as lemma.
+- Next part is to Lemmatize.
+- **Lemmatization** is the process of removing infectional endings and convert to base form or dictionary form of the word which is known as lemma.
 - Coming to the last part of the project is taking the synsets of the lemmatized words.
 - Here the output of synsets is stored in synArr list and then compared with the lemmatized words to find whether the synonyms are present.
 ```py
