@@ -11,7 +11,7 @@ starting in 1985 and has been directed in recent years by **Christiane Fellbaum.
 - WordNet's structure makes it a useful tool for computational linguistics and Natural Language Processing.
 
 ## Synsets
-- Synsets are also called Synonyms Ring.
+- Synsets are also called **Synonyms Ring.**
 - It is a set of one or more synonyms that are interchangable in the context of the language.
 ```py
 >>> wordnet.synsets('win')
@@ -26,12 +26,12 @@ starting in 1985 and has been directed in recent years by **Christiane Fellbaum.
 ## The Project Flow
 - The previous given inputs or the new inputs are stored and passed on in the project flow.
 - The text may contains many unwanted data with respective to English Vocabulary - Synonyms like numbers, punctuations marks and even uppercases.
-- To remove them Regex or Regular Expressions are used.
+- To remove them **Regex or Regular Expressions** are used.
 ```py
 text = re.sub(r'[^a-zA-Z\s]+', '', text)
 text = text.lower()
 ```
-- Next is to remove the Stopwords(is, I, are, am, and, the) and tokenize to segregate the words.
+- Next is to remove the **Stopwords**(is, I, are, am, and, the) and tokenize to segregate the words.
 - Next part is to Lemmatize.
 - **Lemmatization** is the process of removing infectional endings and convert to base form or dictionary form of the word which is known as lemma.
 - Coming to the last part of the project is taking the synsets of the lemmatized words.
@@ -52,7 +52,7 @@ if bool(synonyms_array):
 else: 
     print('No synonyms found!') 
 ```
-- The synonyms outputs are stored in dictionary formats and is displayed if not empty.
+- The synonyms outputs are stored in **Dictionary formats** and is displayed if not empty.
 
 ```py
 >>> similar_words(texts)
