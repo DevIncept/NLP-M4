@@ -35,4 +35,30 @@ text = text.lower()
 - Next part is to **Lemmatization**.
 - Lemmatization is the process of removing infectional endings and convert to base form or dictionary form of the word which is known as lemma.
 - Coming to the last part of the project is taking the synsets of the lemmatized words.
-- Here the output 
+- Here the output of synsets is stored in synArr list and then compared with the lemmatized words to find whether the synonyms are present.
+```py
+for word in lemmatized_words:
+    synArr = []
+    sArr = wordnet.synsets(word)
+    for syn in sArr:
+        synArr.append(syn.name()[:-5])
+    synArr = list(set(synArr))
+    for synonyms in synArr:
+        if synonyms in lemmatized_words:
+            if synonyms != word:
+                synonyms_array[word] = synonyms
+if bool(synonyms_array):
+    print(synonyms_array)
+else: 
+    print('No synonyms found!') 
+```
+- The synonyms outputs are stored in dictionary formats and is displayed if not empty.
+
+```py
+>>> similar_words(texts)
+{'purse': 'bag'}
+{'found': 'discover'}
+{'score': 'grade'}
+{'win': 'gain'}
+No synonyms found!
+```
