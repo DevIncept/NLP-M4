@@ -9,9 +9,8 @@
 7. [Part4: Project: Generating tv scripts Notebook](tv_script_generation.ipynb)
 
 
+8. **Group Project :** As directed on slack *(Optional)*
 
-13. **[Group Project](gp.md)** *Optional*
+9. **[Make your Portfolio](https://github.com/DevIncept/Portfolio)** *Optional*
 
-14. **[Make your Portfolio](https://github.com/DevIncept/Portfolio)** *Optional*
-
-15. **Quiz** Link will be shared    *(Mandatory)*
+10. **Quiz** Link will be shared    *(Mandatory)*
